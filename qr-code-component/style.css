@@ -1,0 +1,118 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: sans-serif;
+}
+
+/* variabel */
+/* colors */
+:root {
+  --light-gray: hsl(212, 45%, 89%);
+  --dark-blue: hsl(218, 48%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(220, 15%, 55%);
+}
+
+.container {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.qr {
+  width: 40vw;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1rem solid white;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+.qr--image {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.qr .qr--title,
+.qr .qr--description {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.qr .qr--title {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  line-height: 2.5rem;
+}
+.qr .qr--description {
+  font-size: 1.4rem;
+  padding: 0 3rem;
+}
+
+.attribution {
+  font-size: 1.7rem;
+}
+
+/* mobile query */
+@media only screen and (max-width: 37.4375em) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    gap: 3rem;
+  }
+  .qr {
+    width: 80vw;
+  }
+
+  .qr--title {
+    margin: 0 1.2rem;
+  }
+  .attribution p {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .attribution p span {
+    display: block;
+    /* color: red; */
+  }
+}
+
+/* tablet  */
+@media only screen and (min-width: 37.5em) and (max-width: 59.9375em) {
+  html {
+    font-size: 80%;
+  }
+  .qr {
+    width: 65vw;
+  }
+  .attribution {
+    font-size: 1.2rem;
+  }
+  .attribution p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
