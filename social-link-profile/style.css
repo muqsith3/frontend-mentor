@@ -1,0 +1,105 @@
+:root {
+  --green: #c5f82a;
+  --white: #fefbf6;
+  --grey: #333;
+  --dark-grey: #1f1f1f;
+  --off-black: #141414;
+}
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: sans-serif;
+  color: var(--white);
+}
+body {
+  background-color: var(--off-black);
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15rem;
+}
+.profile {
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 30rem;
+  padding: 3rem;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+}
+.profile--user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.profile--image {
+  width: 9rem;
+  border-radius: 5rem;
+  padding-bottom: 1rem;
+}
+.profile--user h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.profile--address {
+  color: var(--green);
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+.profile--job {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.profile--button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+.btn {
+  text-decoration: none;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--grey);
+  color: var(--white);
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 0;
+}
+.link:active,
+.link:hover {
+  background-color: var(--green);
+  color: var(--grey);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--white);
+}
+.attribution a:hover {
+  color: var(--green);
+}
