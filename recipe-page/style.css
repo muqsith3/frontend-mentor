@@ -1,0 +1,158 @@
+/* basic color */
+:root {
+  /* primary */
+  --nutmeg: #854632;
+  --dark-raspberry: #7b284f;
+  /* neutral */
+  --white: #fffbf5;
+  --rose-white: #fff5fa;
+  --eggshell: #f3e6d8;
+  --wenge-brown: #5f574e;
+  --dark-charcoal: #302d2c;
+}
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--eggshell);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9rem 0;
+  gap: 2.5rem;
+}
+
+.card {
+  background-color: var(--white);
+  width: 50rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+.card--image {
+  width: 100%;
+  border-radius: 1rem;
+}
+.card-title {
+  padding: 2rem 0.5rem;
+  font-size: 2.5rem;
+  color: var(--wenge-brown);
+  line-height: 1rem;
+}
+.card-description {
+  color: var(--dark-charcoal);
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+}
+.card-time {
+  background-color: rgba(123, 40, 79, 0.2);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  /* margin-bottom: 1.6rem; */
+}
+.card-time--title {
+  font-size: 1.6rem;
+  color: var(--dark-raspberry);
+  padding-bottom: 0.5rem;
+}
+.card-time--list,
+.card-ingredients--list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.card-time--list li,
+.card-ingredients--list li {
+  font-size: 1.3rem;
+  color: var(--wenge-brown);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.card-time--icon {
+  fill: var(--dark-raspberry);
+}
+/* card ingredients */
+.card-ingredients,
+.card-instructions {
+  border-bottom: 1px solid rgba(95, 87, 78, 0.5);
+  padding: 2rem;
+}
+.card-ingredients--title,
+.card-instructions--title,
+.card-nutrition--title {
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+  color: var(--nutmeg);
+}
+.card-ingredients--icon {
+  fill: var(--wenge-brown);
+}
+
+.card-instructions--list {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--wenge-brown);
+  font-size: 1.3rem;
+}
+.card-instructions--list li {
+  line-height: 1.8rem;
+}
+.card-instructions--list li::marker {
+  font-weight: bold;
+  color: var(--nutmeg);
+}
+.card-nutrition {
+  padding: 2rem;
+}
+.card-nutrition p {
+  color: var(--wenge-brown);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+tr,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+td:not(:first-child) {
+  color: var(--nutmeg);
+  font-weight: bold;
+}
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--wenge-brown);
+}
+tr:hover {
+  background-color: var(--eggshell);
+  transition: all 0.3;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
