@@ -96,11 +96,12 @@ body {
 /* desktop */
 @media only screen and (min-width: 60em) {
   .testimonials-container {
+    max-width: 100rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: stretch;
     gap: 1rem;
-    margin: 2rem;
+    margin: 2rem auto;
   }
   .testimonial {
     max-width: 100%;
